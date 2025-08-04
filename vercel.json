@@ -1,0 +1,14 @@
+{
+    "rewrites": [
+        {
+            "source": "/arjuna-batch-2025",
+            "destination": "/arjuna-batch-2025.html"
+        },
+        {
+            "source": "/",
+            "destination": "/index.html"
+        }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+}
