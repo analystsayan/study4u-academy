@@ -1,0 +1,84 @@
+
+.hero {
+    background: #eaf4fc;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #003366;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.courses,
+.orientation,
+.latest-batch-container,
+.contact {
+    padding: 1.5rem;
+    background: #fff;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.courses h2,
+.latest-batch-container h2,
+.orientation h2,
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.batch-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f0f8ff;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .nav-links {
+        flex-direction: row;
+        display: flex !important;
+        margin: unset;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .batch-card {
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .courses,
+    .latest-batch-container,
+    .orientation,
+    .contact {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+}

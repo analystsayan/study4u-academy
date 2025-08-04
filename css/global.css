@@ -1,0 +1,23 @@
+:root {
+    --space-sm: .4em;
+    --space-md: .8em;
+    --space-lg: 1.2em;
+    --space-xl: 1.6em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f9f9f9;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
