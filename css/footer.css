@@ -1,7 +1,37 @@
-footer {
+.footer {
+    padding: var(--space-lg) calc(var(--space-xl) * 2);
+    background: var(--primary);
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--space-lg) * 2);
+}
+.footer-logo {
+    width: 100%;
+    font-size: .6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
     text-align: center;
-    padding: 1rem;
-    background: #003366;
-    color: white;
-    font-size: 0.9rem;
+}
+.footer-logo img {
+    width: 40%;
+    max-width: 100px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background-position: center;
+}
+.company-aboutus {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-md);
+}
+.company-header {
+    color: var(--accent-light);
+}
+.company-aboutus ul li a:hover {
+    text-decoration: underline;
 }

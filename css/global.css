@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
+    --primary: #131b23;
+    --font: #fcfcff;
+    --muted: #ffffff80;
+    --accent: #072ac8;
+    --accent-light: #d5a51e;
+
     --space-sm: .4em;
     --space-md: .8em;
     --space-lg: 1.2em;
@@ -11,13 +19,55 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Open Sans", sans-serif;
     background: #f9f9f9;
     color: #222;
+    font-size: .8rem;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+svg {
+    width: 1.3em;
+    height: 1.3em;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--accent-light);
+    font-weight: 600;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.mute-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--muted);
+    border: solid 1px var(--muted);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1rem;
+    }
 }

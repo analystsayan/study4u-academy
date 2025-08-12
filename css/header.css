@@ -2,30 +2,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #003366;
-    color: #fff;
+    padding: var(--space-md) var(--space-lg);
+    background-color: var(--primary);
+    color: var(--font);
 }
-
 .logo {
-    font-weight: bold;
-    font-size: 1.2rem;
+    height: 50px;
+    aspect-ratio: 16 / 9;
 }
-
-.nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 1rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
+.logo img {
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
 }
 
 .hamburger {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     cursor: pointer;
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.nav-links a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: var(--space-lg);
+    }
+
+    .hamburger {
+        display: none;
+    }
 }

@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="shortcut icon" href="/media/img/company/favicon.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/01dcb3424f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
-        <div class="logo"><a href="/">Study4u Academy</a></div>
-        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="logo"><a href="/"><img src="/media/img/company/study4u-academy-logo-light.png" alt=""></a></div>
+        <div class="hamburger" id="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
         <nav class="nav-links" id="navLinks">
             <a href="/">Home</a>
-            <a href="#courses">Courses</a>
             <a href="#latestBatchContainer">Latest Batch</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -28,10 +32,13 @@
     <section class="hero">
         <h1>Achieve Your Goal with Study4u Academy</h1>
         <p>SSC GD, SSC MTS, Agniveer, KP Constable, WBP</p>
-        <a href="#latestBatchContainer" class="btn">View Latest Batch</a>
+        <div class="hero-btn-container">
+            <a href="#latestBatchContainer" class="mute-btn">Latest Batch</a>
+            <a href="#companyAboutus" class="btn">Start Free</a>
+        </div>
     </section>
 
-    <section id="courses" class="courses">
+    <section id="whyUs" class="why-us">
         <h2>Why Choose Us?</h2>
         <ul>
             <li><i class="fa-solid fa-angles-right"></i> Smart Study Plan</li>
@@ -43,7 +50,7 @@
     </section>
 
     <section id="latestBatchContainer" class="latest-batch-container">
-        <h2><i class="fa-solid fa-bullhorn"></i> Latest Batch</h2>
+        <h2>Latest Batch</h2>
         <div class="batch-card">
             <h3>Arjuna Batch - 2025</h3>
             <p>Join our newest batch starting soon with expert trainers, updated syllabus, and mock test sessions!</p>
@@ -51,18 +58,60 @@
         </div>
     </section>
 
-    <section class="orientation">
-        <h2><i class="fa-solid fa-bolt"></i> Free Orientation</h2>
-        <p>Orientation Class on <strong>10th Aug, 9 a.m.</strong> | Join Now!</p>
+    <section id="noticeBoard" class="notice-board">
+        <h2>Notice Board</h2>
+        <article class="notice-card">
+            <h3 class="notice-title">Admission Open — August 2025 Batch</h3>
+            <time class="notice-date" datetime="2025-07-01">Jul 25, 2025</time>
+            <p class="notice-desc">
+                Applications are now open for the July batch. Seats are limited — apply soon. Visit the <a
+                    style="text-decoration: underline;" href="#">admissions page</a>
+                for eligibility and syllabus details.
+            </p>
+        </article>
     </section>
 
-    <section class="contact" id="contact">
-        <h2><i class="fa-solid fa-location-dot"></i> Contact Us</h2>
-        <p>Madhabganj, Lego, Bankura</p>
-        <p><i class="fa-solid fa-phone-volume"></i> 6295 355 439 / 7550970118</p>
-    </section>
-
-    <footer>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/media/img/company/study4u-academy-logo-light.png" alt="Study4u Academy Logo">
+            <p>Study4u Academy is dedicated to providing quality education and resources for competitive exams</p>
+        </div>
+        <section id="companyAboutus" class="company-aboutus">
+            <div class="company-policy">
+                <ul>
+                    <li class="company-header">About Company</li>
+                    <li>Privacy Policy</li>
+                    <li>Disclaimer</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+            <div class="company-courses">
+                <ul>
+                    <li class="company-header">Courses</li>
+                    <li><a href="/arjuna-batch-2025">Arjuna Batch 2025</a></li>
+                </ul>
+            </div>
+            <div class="company-quick-links">
+                <ul>
+                    <li class="company-header">Quick Links</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#courses">Courses</a></li>
+                    <li><a href="/#instructors">Instructors</a></li>
+                    <li><a href="/#latestBatchContainer">Latest Batch</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li class="company-header">Socials</li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">WhatsApp Channel</a></li>
+                    <li><a href="#">Telegram Channel</a></li>
+                </ul>
+            </div>
+        </section>
         <p>&copy; 2025 Study4u Academy. All rights reserved.</p>
     </footer>
 
