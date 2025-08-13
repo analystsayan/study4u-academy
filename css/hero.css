@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: var(--space-md);
+    gap: var(--space-xl);
     min-height: 50vh;
     background: #000000;
     color: var(--font);
     text-align: center;
-    padding: var(--space-xl) var(--space-lg);
+    padding: var(--space-md);
 }
 
 .hero h1 {
@@ -24,10 +24,9 @@
 .exam-animation {
     width: 100%;
     position: relative;
-    height: 42px;
+    height: 65px;
     /* Adjust depending on font size */
     overflow: hidden;
-    font-size: 2rem;
     /* Big like H1 */
     font-weight: bold;
     text-align: center;

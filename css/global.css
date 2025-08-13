@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
+    --background: black;
     --primary: #131b23;
     --font: #fcfcff;
     --muted: #ffffff5d;
@@ -26,18 +27,18 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    background: #f9f9f9;
+    background: var(--background);
     color: #222;
     font-size: .8rem;
 }
 h1 {
-    font-size: 2rem;
+    font-size: clamp(2.6rem, 3vw, 5rem);
 }
 h2 {
-    font-size: 1.6rem;
+    font-size: clamp(1.8rem, 2.5vw, 4rem);
 }
 h3 {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2vw, 3rem);
 }
 
 a {

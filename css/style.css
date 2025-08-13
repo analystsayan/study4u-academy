@@ -2,6 +2,7 @@
 .why-us {
     text-align: center;
     padding: var(--space-xl) var(--space-lg);
+    margin: var(--space-xl) var(--space-lg);
     background: var(--primary);
     color: var(--font);
     display: flex;
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-xl);
+    border-radius: 12px;
 }
 .timeline {
     width: 100%;
@@ -310,6 +312,65 @@
     background-image: linear-gradient(to top, var(--primary), transparent);
 }
 
+/* social  */
+.social {
+    background: var(--primary);
+    color: var(--font);
+    padding: var(--space-xl) var(--space-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space-xl)*2);
+}
+.social-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--space-md);
+}
+.social-card {
+    aspect-ratio: 1 / 1;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    background: #ffffff00;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+}
+.social-card-container .youtube {
+    box-shadow: 0 0 600px #ff00005d;
+}
+.social-card-container .telegram {
+    box-shadow: 0 0 600px #0099ff5d;
+}
+.social-card-container .instagram {
+    box-shadow: 0 0 600px #ff00805d;
+}
+.social-card-container .facebook {
+    box-shadow: 0 0 600px #1e00ff5d;
+}
+.social-card p {
+    font-size: 40px;
+    font-weight: bold;
+}
+.social-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    align-items: center;
+}
+.social-items img {
+    width: 20px;
+    background-size: cover;
+    background-position: center6
+}
+
 @keyframes scroll-up {
     0% {
         transform: translateY(0);
@@ -344,19 +405,27 @@
     }
 
     .why-us {
-        padding: var(--space-xl) calc(var(--space-xl) * 16);
+        margin: var(--space-xl) calc(var(--space-xl) * 8);
     }
 
     .free-learning {
-        padding: var(--space-xl) calc(var(--space-xl) * 8);
+        padding: var(--space-xl) calc(var(--space-xl) * 10);
     }
 
     .free-learning-card:hover svg {
         transform: scale(1.2);
     }
+    .social {
+        margin: var(--space-xl) calc(var(--space-xl) * 8);
+        border-radius: 12px;
+    }
+    .social-card-container {
+        padding: var(--space-xl) calc(var(--space-xl) * 4);
+    }
 
     .latest-batch {
-        padding: var(--space-xl) calc(var(--space-xl) * 8);
+        margin: var(--space-xl) calc(var(--space-xl) * 8);
+        border-radius: 12px;
     }
     .latest-batch-scroll {
         display: flex;

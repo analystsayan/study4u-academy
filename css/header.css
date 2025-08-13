@@ -32,6 +32,9 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+    header {
+        padding: var(--space-md) calc(var(--space-lg) * 6);
+    }
     .nav-links {
         display: flex;
         flex-direction: row;
