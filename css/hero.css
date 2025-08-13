@@ -11,13 +11,84 @@
     text-align: center;
     padding: var(--space-xl) var(--space-lg);
 }
+
 .hero h1 {
     color: var(--font);
     margin-bottom: 0.5rem;
 }
+
 .hero p {
     color: var(--muted-font);
 }
+
+.exam-animation {
+    width: 100%;
+    position: relative;
+    height: 42px;
+    /* Adjust depending on font size */
+    overflow: hidden;
+    font-size: 2rem;
+    /* Big like H1 */
+    font-weight: bold;
+    text-align: center;
+}
+
+.exam-animation span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: var(--color);
+    animation: slideUp 10s linear infinite;
+    opacity: 0;
+}
+
+.exam-animation span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.exam-animation span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.exam-animation span:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.exam-animation span:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.exam-animation span:nth-child(5) {
+    animation-delay: 8s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    5% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
 .hero-btn-container {
     display: flex;
     flex-direction: row;
