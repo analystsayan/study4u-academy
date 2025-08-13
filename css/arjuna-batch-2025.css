@@ -16,12 +16,9 @@ main {
     align-items: start;
     justify-content: center;
 }
-.batch-title h1 {
-    font-size: 1.4rem;
-}
+
 .batch-title p {
     color: #555;
-    font-size: 1rem;
 }
 
 img {
