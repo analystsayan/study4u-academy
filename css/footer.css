@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: calc(var(--space-lg) * 2);
+    gap: var(--space-lg);
 }
 .footer-logo {
     width: 100%;
