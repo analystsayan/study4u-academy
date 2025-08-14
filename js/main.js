@@ -17,7 +17,7 @@ const messaging = getMessaging(app);
 Notification.requestPermission().then((permission) => {
     if (permission === "granted") {
         console.log("Notification permission granted.");
-        getToken(messaging, { vapidKey: "AIzaSyC-TvtvKCGT0bV11_NZqSBKPnzqudjIt5U" })
+        getToken(messaging, { vapidKey: "BIJQDOltLWI7ldptQULlKbrvD-t0u4yr1jkcgMYkdMKunzzhM0LLB2AtrV9V-p8b8LEMk3oMmdrhpkw_1QS9nDA" })
             .then((currentToken) => {
                 if (currentToken) {
                     console.log("Device Token:", currentToken);
