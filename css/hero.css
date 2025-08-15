@@ -94,11 +94,41 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    margin-top: var(--space-md);
+    margin-top: calc(var(--space-xl) + var(--space-md));
+}
+
+.cute-panda-head {
+    width: 80px;
+    height: auto;
+    right: var(--space-md);
+    filter: drop-shadow(0 0 3px white);
+    z-index: 3;
+}
+.latest-batch-btn,
+.free-learning-btn {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.cute-panda {
+    width: 80px;
+    height: auto;
+    bottom: 85%;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+}
+.latest-batch-btn:active .cute-panda {
+    left: 30%;
 }
 
 @media screen and (min-width: 1024px) {
     .hero {
         padding: var(--space-xl) calc(var(--space-xl) * 8);
     }
+    .latest-batch-btn:hover .cute-panda {
+    left: 40%;
+}
 }

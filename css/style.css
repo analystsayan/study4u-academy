@@ -341,19 +341,37 @@
     background: #ffffff00;
     border: 1px solid var(--muted);
     border-radius: 8px;
+    transition: all 0.3s ease-in-out;
 }
-.social-card-container .youtube {
+.youtube {
     box-shadow: 0 0 600px #ff00005d;
 }
-.social-card-container .telegram {
+.youtube:hover {
+    border: 2px solid red;
+    transform: scale(1.1);
+}
+.telegram {
     box-shadow: 0 0 600px #0099ff5d;
 }
-.social-card-container .instagram {
-    box-shadow: 0 0 600px #ff00805d;
+.telegram:hover {
+    border: 2px solid #0099ff;
+    transform: scale(1.1);
 }
-.social-card-container .facebook {
+.facebook {
     box-shadow: 0 0 600px #1e00ff5d;
 }
+.facebook:hover {
+    border: 2px solid #0055ff;
+    transform: scale(1.1);
+}
+.instagram {
+    box-shadow: 0 0 600px #ff00805d;
+}
+.instagram:hover {
+    border: 2px solid #ff2b80;
+    transform: scale(1.1);
+}
+
 .social-card p {
     font-size: 40px;
     font-weight: bold;

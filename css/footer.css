@@ -27,12 +27,14 @@
 .company-aboutus {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: var(--space-md);
     text-align-last: left;
+    color: var(--font);
 }
 .company-header {
     color: var(--accent-light);
+    font-weight: 600;
 }
 .company-aboutus ul li {
     list-style: none;
