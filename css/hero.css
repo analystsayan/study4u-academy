@@ -98,12 +98,57 @@
 }
 
 .cute-panda-head {
+    display: inline-block;
     width: 80px;
     height: auto;
-    right: var(--space-md);
     filter: drop-shadow(0 0 3px white);
     z-index: 3;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+/* Heart element */
+.panda-heart {
+    position: fixed;
+    pointer-events: none;
+    /* hearts don't block clicks */
+    transform-origin: center;
+    font-size: 18px;
+    will-change: transform, opacity;
+    z-index: 9999;
+    opacity: 1;
+    transition: transform 800ms cubic-bezier(.2, .8, .2, 1), opacity 800ms ease-out;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.06);
+}
+
+/* Optional: different sizes */
+.panda-heart.small {
+    font-size: 12px;
+}
+
+.panda-heart.medium {
+    font-size: 18px;
+}
+
+.panda-heart.large {
+    font-size: 26px;
+}
+
+/* Keyframe fallback animation (if you prefer keyframes instead) */
+@keyframes pandaFloat {
+    0% {
+        transform: translateY(0) scale(1) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-160px) translateX(var(--tx, 0px)) scale(0.8) rotate(var(--rot, 0deg));
+        opacity: 0;
+    }
+}
+
 .latest-batch-btn,
 .free-learning-btn {
     width: fit-content;
@@ -120,6 +165,7 @@
     z-index: 3;
     transition: all 0.3s ease-in-out;
 }
+
 .latest-batch-btn:active .cute-panda {
     left: 30%;
 }
@@ -128,7 +174,8 @@
     .hero {
         padding: var(--space-xl) calc(var(--space-xl) * 8);
     }
+
     .latest-batch-btn:hover .cute-panda {
-    left: 40%;
-}
+        left: 40%;
+    }
 }
