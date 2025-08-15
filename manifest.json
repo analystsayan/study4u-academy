@@ -3,7 +3,7 @@
     "short_name": "Study4u",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#000000",
+    "background_color": "#0d173b",
     "theme_color": "#0078d4",
     "description": "We prepare aspirants for SSC GD, SSC MTS, Agniveer, KP Constable, WBP Constable.",
     "icons": [
