@@ -35,17 +35,4 @@ Notification.requestPermission().then((permission) => {
 // Foreground message handler
 onMessage(messaging, (payload) => {
     console.log("Message received in foreground: ", payload);
-
-     // Get existing notifications
-    let notifications = JSON.parse(localStorage.getItem('notifications')) || [];
-
-    // Add new one
-    notifications.push({
-        title: payload.notification.title,
-        body: payload.notification.body,
-        time: new Date().toISOString()
-    });
-
-    // Save back
-    localStorage.setItem('notifications', JSON.stringify(notifications));
 });

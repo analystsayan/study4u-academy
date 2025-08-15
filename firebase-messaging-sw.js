@@ -13,23 +13,3 @@ firebase.initializeApp({
 });
 
 firebase.messaging();
-
-// ✅ This runs when the user clicks a push notification
-self.addEventListener('notificationclick', function (event) {
-    event.notification.close();
-
-    event.waitUntil(
-        clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function (clientList) {
-            // If page already open, focus it
-            for (let client of clientList) {
-                if (client.url.includes('/notifications') && 'focus' in client) {
-                    return client.focus();
-                }
-            }
-            // Else open new tab
-            if (clients.openWindow) {
-                return clients.openWindow('/notifications');
-            }
-        })
-    );
-});
