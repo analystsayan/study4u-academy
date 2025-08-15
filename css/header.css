@@ -16,10 +16,19 @@ header {
     background-position: center;
 }
 
-.hamburger {
+.hamburger,
+.close-sidebar {
     font-size: 1.6rem;
     cursor: pointer;
 }
+
+#closeSidebar {
+    display: none;
+}
+#closeSidebar.visible {
+    display: block;
+}
+
 .nav-links {
     display: none;
     flex-direction: column;

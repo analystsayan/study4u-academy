@@ -1,0 +1,24 @@
+aside {
+    color: var(--font);
+    background: var(--primary);
+    padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+aside a {
+    width: fit-content;
+}
+#sidebar {
+    display: none;
+}
+#sidebar.active {
+    display: flex;
+}
+
+/* Hide elements when needed */
+.hidden {
+    display: none;
+}

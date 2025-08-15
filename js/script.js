@@ -1,13 +1,23 @@
 const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+const sidebar = document.getElementById('sidebar');
+const closeSidebar = document.getElementById('closeSidebar');
 
-hamburger.addEventListener('click', () => {
-    if (navLinks.style.display === 'flex') {
-        navLinks.style.display = 'none';
-    } else {
-        navLinks.style.display = 'flex';
-    }
-});
+function openSidebar() {
+    sidebar.classList.add('active');
+    hamburger.classList.add('hidden');
+    closeSidebar.classList.add('visible');
+}
+
+function closeSidebarMenu() {
+    sidebar.classList.remove('active');
+    hamburger.classList.remove('hidden');
+    closeSidebar.classList.remove('visible');
+}
+
+hamburger.addEventListener('click', openSidebar);
+closeSidebar.addEventListener('click', closeSidebarMenu);
+
+
 
 
 

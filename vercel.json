@@ -7,6 +7,10 @@
         {
             "source": "/",
             "destination": "/index.html"
+        },
+        {
+            "source": "notifications",
+            "destination": "notifications.html"
         }
     ],
     "cleanUrls": true,
