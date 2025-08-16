@@ -1,7 +1,7 @@
 .footer {
-    padding: var(--space-xl) calc(var(--space-lg) * 2);
-    background: var(--primary);
-    color: var(--font);
+    padding: calc(var(--space-lg) * 2);
+    background-color: #131b23;
+    color: #fcfcff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: var(--space-md);
     text-align-last: left;
-    color: var(--font);
+    color: #fcfcff;
 }
 .company-header {
     color: var(--accent-light);
@@ -45,6 +45,6 @@
 
 @media screen and (min-width: 1024px) {
     .footer {
-        padding: var(--space-md) calc(var(--space-lg) * 6);
+        padding: calc(var(--space-lg) * 4) calc(var(--space-lg) * 6);
     }
 }

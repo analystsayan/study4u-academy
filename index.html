@@ -55,29 +55,49 @@
 
 <body>
     <header>
+        <div class="burger-container">
+            <div class="hamburger" id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+            <div class="close-sidebar" id="closeSidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </div>
+        </div>
         <div class="logo"><a href="/"><img src="/media/img/company/study4u-academy-logo-light.png" alt=""></a></div>
-        <div class="hamburger" id="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
+        <div class="login-container">
+            <div class="theme-container">
+                <i class="fa-solid fa-moon dark-btn"></i>
+                <i class="fa-solid fa-sun light-btn"></i>
+            </div>
+            <details class="nav-links" id="navLinks">
+                <summary>
+                    <div>Resources</div>
+                </summary>
+                <ul>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Cheat Sheet</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                </ul>
+            </details>
+            <a href="#" class="blue-btn">Login</a>
         </div>
-        <div class="close-sidebar" id="closeSidebar">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
-                <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
-        </div>
-        <nav class="nav-links" id="navLinks">
-            <a href="/">Home</a>
-            <a href="#freeLearning">Free Resource</a>
-            <a href="#latestBatch">Latest Batch</a>
-        </nav>
     </header>
 
     <aside id="sidebar" class="sidebar">
-        <a href="/">Home</a>
-        <a href="#freeLearning">Free Resource</a>
-        <a href="#latestBatch">Latest Batch</a>
+        <ul>
+            <li><a href="#">Notes</a></li>
+            <li><a href="#">Cheat Sheet</a></li>
+            <li><a href="#">Syllabus</a></li>
+        </ul>
+        <div class="theme-container">
+            <i class="fa-solid fa-moon dark-btn"></i>
+            <i class="fa-solid fa-sun light-btn"></i>
+        </div>
     </aside>
 
     <section class="hero">
@@ -259,7 +279,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://www.youtube.com/@study4uacademy">
+            <a href="https://www.instagram.com/study4uacademy">
                 <div class="social-card instagram">
                     <p>50+</p>
                     <div class="social-items">
@@ -278,14 +298,15 @@
                 <div class="air">
                     AIR 221 <br><span>SSC MTS 2024</span>
                 </div>
-                <img src="/media/img/panda-2.png">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
                 <h3>Pritam Mondal</h3>
                 <p>GI & GS</p>
             </div>
-            <div class="card"><img src="/media/img/Cat-sleeping-in-books_14884844.png"><h3>Kartick Dey</h3><p>English Vocabulary</p></div>
-            <div class="card"><img src="/media/img/panda-2.png"><h3>Pritam Chowdhury</h3><p>Reasoning & Physics</p></div>
-            <div class="card"><img src="/media/img/Cat-sleeping-in-books_14884844.png"><h3>Sumit Boxi</h3><p>Chemistry</p></div>
-            <div class="card"><img src="/media/img/panda-2.png"><h3>Partha Chatterjee</h3><p>History</p></div>
+            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Kartick Dey</h3><p>Vocabulary</p></div>
+            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Pritam Chowdhury</h3><p>Reasoning</p></div>
+            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Sumit Boxi</h3><p>Physics</p></div>
+            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Partha Chatterjee</h3><p>History</p></div>
+            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Santu Dey</h3><p>Geography</p></div>
         </div>
     </section>
 

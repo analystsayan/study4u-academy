@@ -7,10 +7,10 @@
     position: relative;
     gap: var(--space-xl);
     min-height: 50vh;
-    background: #000000;
-    color: var(--font);
+    background: #000;
+    color: #fcfcff;
     text-align: center;
-    padding: var(--space-md);
+    padding: calc(var(--space-md) * 4) var(--space-md);
 }
 
 .hero h1 {
@@ -19,7 +19,7 @@
 }
 
 .hero p {
-    color: var(--muted-font);
+    color: #ffffff90;
 }
 
 .exam-animation {
@@ -172,7 +172,7 @@
 
 @media screen and (min-width: 1024px) {
     .hero {
-        padding: var(--space-xl) calc(var(--space-xl) * 8);
+        padding: var(--space-xl) calc(var(--space-xl) * 4) calc(var(--space-xl) * 2) calc(var(--space-xl) * 8);
     }
 
     .latest-batch-btn:hover .cute-panda {

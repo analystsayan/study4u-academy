@@ -3,8 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md) var(--space-lg);
-    background-color: var(--primary);
-    color: var(--font);
+    background-color: #131b23;
+    color: #fcfcff;
 }
 .logo {
     height: 50px;
@@ -16,8 +16,13 @@ header {
     background-position: center;
 }
 
+.burger-container {
+    width: 60px;
+}
+
 .hamburger,
 .close-sidebar {
+    width: fit-content;
     font-size: 1.6rem;
     cursor: pointer;
 }
@@ -32,25 +37,118 @@ header {
 .nav-links {
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: var(--space-sm);
+    position: relative;
+    cursor: pointer;
 }
 
 .nav-links a {
-    color: var(--font);
+    color: #fcfcff;
     text-decoration: none;
 }
 
+header details summary {
+    list-style: none;
+    margin: var(--space-sm) 0;
+    padding: var(--space-sm) var(--space-md);
+    text-align: center;
+    border-radius: 900px;
+}
+header details summary:hover {
+    background: var(--accent-hover);
+}
+header details ul {
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: 120%;
+    width: max-content ;
+    background: #333;
+    border: solid 1px #ffffff5d;
+    border-radius: 8px;
+    z-index: 999;
+}
+header details ul li {
+    padding: var(--space-sm) var(--space-md);
+    color: #fcfcff;
+    transition: all 0.3s ease-in-out;
+}
+header details ul li:first-child {
+    border-radius: 8px 8px 0 0;
+}
+header details ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+header details ul li:hover {
+    background: #555;
+}
+header .theme-container {
+    display: none;
+}
+aside .theme-container {
+    display: flex;
+}
+header .theme-container,
+aside .theme-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff20;
+    border-radius: 900px;
+}
+.dark-btn:hover,
+.light-btn:hover {
+    transform: rotate(45deg) scale(1.3);
+    color: #fcfcff;
+}
+header .theme-container i,
+aside .theme-container i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    padding:var(--space-md);
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffffff90;
+    transition: all .3s ease;
+}
+/* header .theme-container i:hover,
+aside .theme-container i:hover {
+    background: #333;
+    border: solid 1px #ffffff5d;
+    color: #fcfcff;
+}
+header .theme-container .fa-moon,
+aside .theme-container .fa-moon {
+    border-radius: 50% 0 0 50%;
+}
+header .theme-container .fa-sun,
+aside .theme-container .fa-sun {
+    border-radius: 0 50% 50% 0;
+} */
 @media screen and (min-width: 1024px) {
     header {
         padding: var(--space-md) calc(var(--space-lg) * 6);
     }
-    .nav-links {
-        display: flex;
-        flex-direction: row;
-        gap: var(--space-lg);
-    }
-
-    .hamburger {
+    .burger-container {
         display: none;
+    }
+    .nav-links {
+        display: block;
+        gap: var(--space-lg);
+        order: -1;
+    }
+    .login-container {
+        display: flex;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+    header .theme-container {
+        display: flex;
+        order: -1;
     }
 }

@@ -167,3 +167,31 @@ track.addEventListener('touchend', () => {
 
 })();
 
+
+// theme
+
+document.addEventListener("DOMContentLoaded", () => {
+    const body = document.body;
+    const darkBtns = document.querySelectorAll(".dark-btn");
+    const lightBtns = document.querySelectorAll(".light-btn");
+
+    function setTheme(mode) {
+        if (mode === "light") {
+            body.classList.add("light-theme");
+            localStorage.setItem("theme", "light");
+        } else {
+            body.classList.remove("light-theme");
+            localStorage.setItem("theme", "dark");
+        }
+    }
+
+    // Click handlers (for ALL containers: desktop + mobile)
+    darkBtns.forEach(btn => btn.addEventListener("click", () => setTheme("dark")));
+    lightBtns.forEach(btn => btn.addEventListener("click", () => setTheme("light")));
+
+    // Apply saved theme on load
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(savedTheme);
+});
+
+

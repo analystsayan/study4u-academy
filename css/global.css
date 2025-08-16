@@ -7,7 +7,26 @@
     --muted: #ffffff5d;
     --muted-font: #ffffff90;
     --accent: #00a7fb;
+    --accent-hover: #00a7fb40;
     --accent-light: #d5a51e;
+    --accent-light-hover: #d5a51e80;
+
+    --space-sm: .4em;
+    --space-md: .8em;
+    --space-lg: 1.2em;
+    --space-xl: 1.6em;
+}
+
+.light-theme {
+    --background: #fff;
+    --primary: #edf6f9;
+    --font: #1a1a1a;
+    --muted: #00000040;
+    --muted-font: #00000080;
+    --accent: #0077cc;
+    --accent-hover: #00a7fb40;
+    --accent-light: #ffaa00;
+    --accent-light-hover: #d5a51e80;
 
     --space-sm: .4em;
     --space-md: .8em;
@@ -61,7 +80,8 @@ button,
 .blue-btn,
 .mute-btn,
 a,
-svg {
+svg,
+i {
     outline: none;
     -webkit-tap-highlight-color: transparent;
     /* Removes mobile blue tap */
@@ -107,8 +127,8 @@ svg {
     padding: 0.6rem 1.2rem;
     background-color: transparent;
     font-weight: 500;
-    color: var(--muted-font);
-    border: solid 1px var(--muted-font);
+    color: #ffffff90;
+    border: solid 1px #ffffff90;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
