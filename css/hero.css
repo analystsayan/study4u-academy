@@ -97,11 +97,11 @@
     margin-top: calc(var(--space-xl) + var(--space-md));
 }
 
-.cute-panda-head {
+.indian-flag {
     display: inline-block;
-    width: 80px;
+    width: 180px;
     height: auto;
-    filter: drop-shadow(0 0 3px white);
+    border-left: solid 3px #421d05;
     z-index: 3;
     cursor: pointer;
     user-select: none;

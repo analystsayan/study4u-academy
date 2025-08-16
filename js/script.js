@@ -116,7 +116,7 @@ track.addEventListener('touchend', () => {
     const SPEED_MAX = 4900;
     const DISTANCE_MIN = 110;
     const DISTANCE_MAX = 220;
-    const COLORS = ['#ff6b81', '#ff758f', '#ff9aa2', '#ffd6e0', '#ff4d6d'];
+    const COLORS = ['#ff6f00ff', '#1b8700ff', '#3c00ffff', '#ffffffff'];
 
     function random(min, max) { return Math.random() * (max - min) + min; }
     function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
@@ -130,7 +130,7 @@ track.addEventListener('touchend', () => {
             heart.style.top = y + 'px';
             heart.style.color = pick(COLORS);
             heart.style.fontSize = `${random(12, 28)}px`;
-            heart.innerText = '❤️';
+            heart.innerText = '❤';
 
             const tx = (Math.random() - 0.5) * 160;
             const rot = Math.floor(random(-60, 60)) + 'deg';
