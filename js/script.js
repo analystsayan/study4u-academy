@@ -107,11 +107,11 @@ track.addEventListener('touchend', () => {
 // panda
 
 (function () {
-    const panda = document.getElementById('cutePandaHead');
+    const panda = document.getElementById('indianFlag');
     panda.style.cursor = 'pointer';
-    panda.style.touchAction = 'none';
+    // panda.style.touchAction = 'none';
 
-    const HEARTS_PER_CLICK = 18;
+    const HEARTS_PER_CLICK = 15;
     const SPEED_MIN = 700;
     const SPEED_MAX = 4900;
     const DISTANCE_MIN = 110;
@@ -146,7 +146,7 @@ track.addEventListener('touchend', () => {
                 heart.style.opacity = 0;
             });
 
-            setTimeout(() => heart.remove(), duration + 50);
+            setTimeout(() => heart.remove(), duration + 0);
         }
     }
 
@@ -162,14 +162,13 @@ track.addEventListener('touchend', () => {
         spawnHearts(x, y);
     }
 
-    // ✅ Use pointerdown for instant response on both mouse & touch
+    // Use pointerdown for instant response on both mouse & touch
     panda.addEventListener('pointerdown', handleInteraction);
 
 })();
 
 
 // theme
-
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
     const darkBtns = document.querySelectorAll(".dark-btn");
@@ -185,13 +184,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function vibrate() {
+        if (navigator.vibrate) {
+            navigator.vibrate(50); // vibrates for 50ms
+        }
+    }
+
     // Click handlers (for ALL containers: desktop + mobile)
-    darkBtns.forEach(btn => btn.addEventListener("click", () => setTheme("dark")));
-    lightBtns.forEach(btn => btn.addEventListener("click", () => setTheme("light")));
+    darkBtns.forEach(btn =>
+        btn.addEventListener("click", () => {
+            setTheme("dark");
+            vibrate();
+        })
+    );
+
+    lightBtns.forEach(btn =>
+        btn.addEventListener("click", () => {
+            setTheme("light");
+            vibrate();
+        })
+    );
 
     // Apply saved theme on load
     const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
 });
+
 
 

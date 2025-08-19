@@ -6,6 +6,7 @@ header {
     background-color: #131b23;
     color: #fcfcff;
 }
+
 .logo {
     height: 50px;
     aspect-ratio: 16 / 9;
@@ -19,14 +20,12 @@ header {
 .burger-container {
     width: 60px;
 }
-
 .hamburger,
 .close-sidebar {
     width: fit-content;
     font-size: 1.6rem;
     cursor: pointer;
 }
-
 #closeSidebar {
     display: none;
 }
@@ -43,12 +42,10 @@ header {
     position: relative;
     cursor: pointer;
 }
-
 .nav-links a {
     color: #fcfcff;
     text-decoration: none;
 }
-
 header details summary {
     list-style: none;
     margin: var(--space-sm) 0;
@@ -84,24 +81,24 @@ header details ul li:last-child {
 header details ul li:hover {
     background: #555;
 }
+
 header .theme-container {
     display: none;
-}
-aside .theme-container {
-    display: flex;
 }
 header .theme-container,
 aside .theme-container {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 2px solid #ffffff20;
+    border: 2px solid var(--muted);
     border-radius: 900px;
+    background-color: transparent;
+    color: var(--muted-font);
 }
 .dark-btn:hover,
 .light-btn:hover {
     transform: rotate(45deg) scale(1.3);
-    color: #fcfcff;
+    color: var(--font);
 }
 header .theme-container i,
 aside .theme-container i {
@@ -113,23 +110,21 @@ aside .theme-container i {
     padding:var(--space-md);
     border-radius: 50%;
     cursor: pointer;
-    color: #ffffff90;
+    /* color: var(--muted-font); */
     transition: all .3s ease;
 }
-/* header .theme-container i:hover,
-aside .theme-container i:hover {
-    background: #333;
-    border: solid 1px #ffffff5d;
+aside .theme-container {
+    display: flex;
+    border: 2px solid var(--muted-font);
+}
+header .theme-container  {
+    border: 2px solid #ffffff5d;
+    color: #ffffff90;
+}
+header .theme-container i:hover {
     color: #fcfcff;
 }
-header .theme-container .fa-moon,
-aside .theme-container .fa-moon {
-    border-radius: 50% 0 0 50%;
-}
-header .theme-container .fa-sun,
-aside .theme-container .fa-sun {
-    border-radius: 0 50% 50% 0;
-} */
+
 @media screen and (min-width: 1024px) {
     header {
         padding: var(--space-md) calc(var(--space-lg) * 6);

@@ -16,8 +16,7 @@
 #carousel { 
     position: relative; 
     width: 100%;
-    height: 280px; 
-    touch-action: none;
+    height: 280px;
 } /* enables swipe capture */
 
 .card {
