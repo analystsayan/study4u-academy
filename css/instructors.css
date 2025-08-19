@@ -1,7 +1,7 @@
 .instructors {
     width: 100%;
-    color: #fcfcff;
-    background: #000;
+    color: var(--font);
+    background: var(--primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-md);
-    color: #fcfcff;
+    color: var(--font);
     background: transparent;
     border-radius: 12px;
     text-align: center;
@@ -63,14 +63,14 @@
 }
 
 .air {
-    background-color: red;
+    background-color: #ff3232;
     color: #fcfcff;
     border-radius: 50%;
     font-weight: 800;
     font-size: 1.4rem;
     position: absolute;
-    top: -80px;
-    right: -40px;
+    top: -90px;
+    right: -60px;
     width: 100px;
     aspect-ratio: 1 / 1;
     padding: var(--space-md);

@@ -71,7 +71,7 @@ header details ul {
     backdrop-filter: blur(10px);
     border: solid 1px #ffffff5d;
     border-radius: 8px;
-    z-index: 999;
+    z-index: 10000;
 }
 header details ul li {
     padding: var(--space-sm) var(--space-md);

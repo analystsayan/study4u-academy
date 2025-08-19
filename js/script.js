@@ -225,5 +225,20 @@ document.querySelectorAll(".accordion-header").forEach(header => {
     });
 });
 
+//back to top
+
+// Show/hide the container div based on scroll
+const container = document.getElementById("backToTop")
+window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollY > documentHeight * 0.15) { // 15% scroll threshold
+        container.style.display = "block";
+    } else {
+        container.style.display = "none";
+    }
+});
+
 
 
