@@ -26,9 +26,7 @@
     width: 100%;
     position: relative;
     height: 65px;
-    /* Adjust depending on font size */
     overflow: hidden;
-    /* Big like H1 */
     font-weight: bold;
     text-align: center;
 }
@@ -99,7 +97,8 @@
 
 .indian-flag {
     display: inline-block;
-    width: 180px;
+    width: 33%;
+    max-width: 180px;
     height: auto;
     border-left: solid 3px #421d05;
     z-index: 3;

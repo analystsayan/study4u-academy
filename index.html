@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Study4u Academy - SSC, Agniveer, Constable Exam Preparation</title>
 
     <!-- SEO Meta -->
@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/instructors.css" />
+    <link rel="stylesheet" href="/css/free-quiz.css" />
     <link rel="stylesheet" href="/css/footer.css" />
 
     <!-- Font Awesome -->
@@ -76,23 +77,32 @@
             </div>
             <details class="nav-links" id="navLinks">
                 <summary>
-                    <div>Resources</div>
+                    <div class="resource-container">Resources
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#fff">
+                            <path d="M480-360 280-560h400L480-360Z" />
+                        </svg>
+                    </div>
                 </summary>
                 <ul>
-                    <li><a href="#">Notes</a></li>
-                    <li><a href="#">Cheat Sheet</a></li>
-                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#freeLearning">Free Notes</a></li>
+                    <li><a href="#latestBatch">Our Batches</a></li>
+                    <li><a href="#freeQuiz">Free Quiz</a></li>
+                    <li><a href="#instructors">Instructors</a></li>
+                    <li><a href="#noticeBoard">Notice Board</a></li>
                 </ul>
             </details>
-            <a href="#" class="blue-btn">Login</a>
+            <a href="mailto:contact@study4uacademy.com" class="blue-btn">Contact</a>
         </div>
     </header>
 
     <aside id="sidebar" class="sidebar">
         <ul>
-            <li><a href="#">Notes</a></li>
-            <li><a href="#">Cheat Sheet</a></li>
-            <li><a href="#">Syllabus</a></li>
+            <li><a href="#freeLearning">Free Notes</a></li>
+            <li><a href="#latestBatch">Our Batches</a></li>
+            <li><a href="#freeQuiz">Free Quiz</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#noticeBoard">Notice Board</a></li>
         </ul>
         <div class="theme-container">
             <i class="fa-solid fa-moon dark-btn"></i>
@@ -249,35 +259,86 @@
         </div>
     </section>
 
-    <section id="freeQuiz" class="free-learning">
+    <section id="freeQuiz" class="quiz-section">
+        <p class="header-desc">Test Your Knowledge</p>
         <h2>FREE Quiz</h2>
-        <div class="free-learning-card-container">
-            <a href="https://drive.google.com/drive/folders/1MWpS3wppoHcjFeTDkQPxNvY0DP0WY1nk?usp=sharing">
-                <div class="free-learning-card">
-                    <div class="flcsc english">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#fff">
-                            <path
-                                d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h480q33 0 56.5 23.5T800-800v640q0 33-23.5 56.5T720-80H240Zm0-80h480v-640h-80v280l-100-60-100 60v-280H240v640Zm0 0v-640 640Zm200-360 100-60 100 60-100-60-100 60Z" />
-                        </svg>
-                    </div>
-                    English
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">English
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a href="https://forms.gle/CpxfufQGhapL4aRg8">Quiz 1</a>
+                    <a href="https://forms.gle/uD7iPkzaMGWdcSQp7">Quiz 2</a>
                 </div>
-            </a>
-            <a href="https://drive.google.com/drive/folders/1cl3FLjURm1QzVksabQ0BiwvB4AnSTAzO?usp=sharing">
-                <div class="free-learning-card">
-                    <div class="flcsc genaral-awarness">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#fff">
-                            <path
-                                d="M480-60q-72-68-165-104t-195-36v-440q101 0 194 36.5T480-498q73-69 166-105.5T840-640v440q-103 0-195.5 36T480-60Zm0-104q63-47 134-75t146-37v-276q-73 13-143.5 52.5T480-394q-66-66-136.5-105.5T200-552v276q75 9 146 37t134 75Zm0-436q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T560-760q0-33-23.5-56.5T480-840q-33 0-56.5 23.5T400-760q0 33 23.5 56.5T480-680Zm0-80Zm0 366Z" />
-                        </svg>
-                    </div>
-                    Polity
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Polity
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a>Coming Soon</a>
                 </div>
-            </a>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Reasoning
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a>Coming Soon</a>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Mathematics
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a>Coming Soon</a>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">Geography
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a>Coming Soon</a>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">History
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#fff">
+                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                    </svg>
+                </button>
+                <div class="accordion-body">
+                    <a>Coming Soon</a>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <section id="social" class="social">
         <h2>Join With Our Growing Community</h2>
@@ -322,7 +383,8 @@
     </section>
 
     <section id="instructors" class="instructors">
-        <h2>Meet Your Instructors</h2>
+        <p class="header-desc">Meet Your Instructors</p>
+        <h2>Your Mentors</h2>
         <div class="carousel" id="carousel">
             <div class="card">
                 <div class="air">
@@ -332,11 +394,31 @@
                 <h3>Pritam Mondal</h3>
                 <p>GI & GS</p>
             </div>
-            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Kartick Dey</h3><p>Vocabulary</p></div>
-            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Pritam Chowdhury</h3><p>Reasoning</p></div>
-            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Sumit Boxi</h3><p>Physics</p></div>
-            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Partha Chatterjee</h3><p>History</p></div>
-            <div class="card"><div class="img-container"><img src="/media/img/instructors/image.png"></div><h3>Santu Dey</h3><p>Geography</p></div>
+            <div class="card">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
+                <h3>Kartick Dey</h3>
+                <p>Vocabulary</p>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
+                <h3>Pritam Chowdhury</h3>
+                <p>Reasoning</p>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
+                <h3>Sumit Boxi</h3>
+                <p>Physics</p>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
+                <h3>Partha Chatterjee</h3>
+                <p>History</p>
+            </div>
+            <div class="card">
+                <div class="img-container"><img src="/media/img/instructors/image.png"></div>
+                <h3>Santu Dey</h3>
+                <p>Geography</p>
+            </div>
         </div>
     </section>
 

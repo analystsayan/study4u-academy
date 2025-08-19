@@ -1,0 +1,81 @@
+.quiz-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: var(--space-md);
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    color: var(--font);
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    border: 1px solid var(--accent-hover);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: var(--space-md);
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: var(--primary);
+    color: var(--font);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    background: var(--primary);
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    text-align: left;
+}
+
+.accordion-body a {
+    display: block;
+    padding: var(--space-md) var(--space-lg);
+    text-decoration: none;
+    color: var(--font);
+}
+
+.accordion-body a:hover {
+    background: var(--accent-hover);
+}
+
+.accordion-item.active .accordion-body {
+    max-height: 200px;
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--accent);
+    color: #fff;
+}
+
+.accordion-item.active svg {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active svg {
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .quiz-section {
+        padding: var(--space-xl) calc(var(--space-xl) * 8);
+    }
+}
