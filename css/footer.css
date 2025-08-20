@@ -1,3 +1,4 @@
+/* Footer */
 .footer {
     padding: calc(var(--space-lg) * 2);
     background-color: #131b23;
@@ -43,6 +44,7 @@
     text-decoration: underline;
 }
 
+/* Desktop View Optimization */
 @media screen and (min-width: 1024px) {
     .footer {
         padding: calc(var(--space-lg) * 4) calc(var(--space-lg) * 6);

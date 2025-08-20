@@ -1,0 +1,72 @@
+/* Resources to Learn */
+/* Free Learn  */
+.free-learning {
+    width: 100%;
+    background: var(--background);
+    color: var(--font);
+    padding: var(--space-xl) var(--space-lg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+}
+.free-learning-card-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: var(--space-md);
+}
+.free-learning-card {
+    aspect-ratio: 1 / 1;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    background: var(--primary);
+    border: 1px solid #ffffff5d;
+    border-radius: 8px;
+}
+.free-learning-card svg {
+    width: 60px;
+    height: 60px;
+    padding: var(--space-md);
+    border-radius: 8px;
+    background: #ffffff50;
+    transition: transform 0.3s ease-in-out;
+    fill: #fcfcff;
+}
+.free-learning-card:hover svg {
+    transform: scale(1.2);
+}
+.flcsc {
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.english {
+    background: rgb(255, 72, 0);
+}
+.genaral-awarness {
+    background: var(--accent-light);
+}
+.math {
+    background: var(--accent);
+}
+.reasoning {
+    background: #f200ff;
+}
+
+/* Desktop View Optimization */
+@media screen and (min-width: 1024px) {
+    .free-learning {
+        padding: var(--space-xl) calc(var(--space-xl) * 8);
+    }
+}

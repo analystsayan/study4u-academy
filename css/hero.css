@@ -169,6 +169,7 @@
     left: 30%;
 }
 
+/* Desktop View Optimization */
 @media screen and (min-width: 1024px) {
     .hero {
         padding: var(--space-xl) calc(var(--space-xl) * 4) calc(var(--space-xl) * 2) calc(var(--space-xl) * 8);

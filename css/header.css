@@ -130,7 +130,7 @@ header .theme-container  {
 header .theme-container i:hover {
     color: #fcfcff;
 }
-
+/* Desktop View Optimization */
 @media screen and (min-width: 1024px) {
     header {
         padding: var(--space-md) calc(var(--space-lg) * 6);

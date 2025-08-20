@@ -1,0 +1,122 @@
+/* Why Us */
+.why-us {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    margin: var(--space-xl) var(--space-lg);
+    background: var(--primary);
+    color: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    border-radius: 12px;
+}
+
+.timeline {
+    width: 100%;
+    position: relative;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-image: linear-gradient(to bottom,
+            var(--primary),
+            var(--muted),
+            var(--muted),
+            var(--muted),
+            var(--muted),
+            var(--muted),
+            var(--muted),
+            var(--primary));
+}
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 3em;
+    width: 14px;
+    height: 14px;
+    background-color: var(--font);
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-item.right {
+    left: 50%;
+    justify-content: start;
+}
+.timeline-item.right::before {
+    left: -7px;
+}
+.timeline-item.left {
+    left: 0;
+    justify-content: end;
+}
+.timeline-item.left::before {
+    right: -7px;
+}
+.timeline-item .content,
+.timeline-item .content-special {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: 0 var(--space-md);
+    border-radius: 6px;
+    line-height: 1.4;
+}
+.timeline-item .content svg {
+    width: 6.5em;
+    height: 6.5em;
+    background-color: #d5a41e20;
+    padding: var(--space-md);
+    fill: #d5a41e;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+.timeline-item .content-special svg {
+    fill: #00a7fb;
+    background-color: #00a7fb20;
+    transition: all 0.3s ease-in-out;
+}
+.timeline-item .content svg:active {
+    transform: rotate(-43deg) scale(1.2);
+}
+.timeline-item .content-special svg:active {
+    transform: rotate(43deg) scale(1.2);
+}
+.timeline-item.left .content {
+    text-align: center;
+}
+.timeline-item.right .content {
+    text-align: center;
+}
+
+/* Desktop View Optimization */
+@media screen and (min-width: 1024px) {
+    .why-us {
+        margin: var(--space-xl) calc(var(--space-xl) * 8);
+    }
+    .free-learning {
+        padding: var(--space-xl) calc(var(--space-xl) * 8);
+    }
+    .timeline-item .content svg:hover {
+        transform: rotate(-23deg) scale(1.2);
+    }
+    .timeline-item .content-special svg:hover {
+        transform: rotate(23deg) scale(1.2);
+    }
+}
