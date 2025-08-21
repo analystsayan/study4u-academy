@@ -7,8 +7,6 @@
     color: var(--font);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: var(--space-xl);
     border-radius: 12px;
 }
@@ -109,9 +107,6 @@
 @media screen and (min-width: 1024px) {
     .why-us {
         margin: var(--space-xl) calc(var(--space-xl) * 8);
-    }
-    .free-learning {
-        padding: var(--space-xl) calc(var(--space-xl) * 8);
     }
     .timeline-item .content svg:hover {
         transform: rotate(-23deg) scale(1.2);

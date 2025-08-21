@@ -42,14 +42,15 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body {
+    width: 100%;
     font-family: "Open Sans", sans-serif;
     background: var(--background);
-    color: #222;
+    color: var(--font);
     font-size: .8rem;
-    position: relative;
 }
 h1 {
     font-size: clamp(2.6rem, 3vw, 5rem);
@@ -92,6 +93,8 @@ i {
 }
 
 .btn {
+    width: fit-content;
+    white-space: none;
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background-color: var(--accent-light);
@@ -108,6 +111,8 @@ i {
 }
 
 .blue-btn {
+    width: fit-content;
+    white-space: none;
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background: var(--accent);
@@ -124,6 +129,8 @@ i {
 }
 
 .mute-btn {
+    width: fit-content;
+    white-space: none;
     display: inline-block;
     padding: 0.6rem 1.2rem;
     background-color: transparent;
@@ -139,8 +146,46 @@ i {
     color: #fff;
 }
 
+/* Header Description */
+.header-desc {
+    background-color: var(--accent-light-hover);
+    padding: 2px 8px;
+    width: fit-content;
+    border-radius: 999px;
+    border: 1px solid var(--accent-light);
+    color: var(--font);
+}
+
+/* Back to Top Btn */
+.back-to-top {
+    backdrop-filter: blur(20px);
+    background: var(--accent-light-hover);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 999px;
+    z-index: 10001;
+}
+#backToTop {
+    display: none;
+}
+.back-to-top svg {
+    fill: var(--font);
+    width: 36px;
+    height: 36px;
+    background: var(--primary);
+    border-radius: 999px;
+}
+
 /* Desktop View Optimization */
 @media screen and (min-width: 1024px) {
+    html {
+        scrollbar-width: thin;
+    }
     body {
         font-size: .9rem;
     }

@@ -29,41 +29,6 @@
     }
 }
 
-/* Header Description */
-.header-desc {
-    background-color: var(--accent-light-hover);
-    padding: 2px 8px;
-    width: fit-content;
-    border-radius: 999px;
-    border: 1px solid var(--accent-light);
-    color: var(--font);
-}
-
-/* Back to Top Btn */
-.back-to-top {
-    backdrop-filter: blur(20px);
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    border-radius: 999px;
-    z-index: 10001;
-}
-#backToTop {
-    display: none;
-}
-.back-to-top svg {
-    fill: var(--font);
-    width: 36px;
-    height: 36px;
-    filter: drop-shadow(0 0 20px #131b23);
-    background: var(--primary);
-    border-radius: 999px;
-}
-
 /* social Section  */
 .social {
     background: var(--primary);

@@ -1,8 +1,12 @@
 {
     "rewrites": [
         {
-            "source": "/arjuna-batch-2025",
-            "destination": "/arjuna-batch-2025.html"
+            "source": "/arjuna-2025",
+            "destination": "/arjuna-2025.html"
+        },
+        {
+            "source": "/wbssc-2025",
+            "destination": "/wbssc-2025.html"
         },
         {
             "source": "/",

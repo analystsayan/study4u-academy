@@ -1,46 +1,3 @@
-const hamburger = document.getElementById('hamburger');
-const sidebar = document.getElementById('sidebar');
-const closeSidebar = document.getElementById('closeSidebar');
-
-function openSidebar() {
-    sidebar.classList.add('active');
-    hamburger.classList.add('hidden');
-    closeSidebar.classList.add('visible');
-}
-
-function closeSidebarMenu() {
-    sidebar.classList.remove('active');
-    hamburger.classList.remove('hidden');
-    closeSidebar.classList.remove('visible');
-}
-
-hamburger.addEventListener('click', openSidebar);
-closeSidebar.addEventListener('click', closeSidebarMenu);
-
-
-
-
-
-// batch card
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".latest-batch-card");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                cards.forEach(c => c.classList.remove("active"));
-                entry.target.classList.add("active");
-            }
-        });
-    }, {
-        threshold: .6 // 60% visible means it's in the center
-    });
-
-    cards.forEach(card => observer.observe(card));
-});
-
-
-
 // ----- Instructors carousel -----
 const track = document.getElementById('carousel'); // parent of the .card nodes
 
@@ -166,49 +123,6 @@ track.addEventListener('touchend', () => {
     panda.addEventListener('pointerdown', handleInteraction);
 
 })();
-
-
-// theme
-document.addEventListener("DOMContentLoaded", () => {
-    const body = document.body;
-    const darkBtns = document.querySelectorAll(".dark-btn");
-    const lightBtns = document.querySelectorAll(".light-btn");
-
-    function setTheme(mode) {
-        if (mode === "light") {
-            body.classList.add("light-theme");
-            localStorage.setItem("theme", "light");
-        } else {
-            body.classList.remove("light-theme");
-            localStorage.setItem("theme", "dark");
-        }
-    }
-
-    function vibrate() {
-        if (navigator.vibrate) {
-            navigator.vibrate(50); // vibrates for 50ms
-        }
-    }
-
-    // Click handlers (for ALL containers: desktop + mobile)
-    darkBtns.forEach(btn =>
-        btn.addEventListener("click", () => {
-            setTheme("dark");
-            vibrate();
-        })
-    );
-
-    lightBtns.forEach(btn =>
-        btn.addEventListener("click", () => {
-            setTheme("light");
-            vibrate();
-        })
-    );
-
-    // Apply saved theme on load
-    const savedTheme = localStorage.getItem("theme") || "dark";
-    setTheme(savedTheme);
-});
 
 
 // free quiz

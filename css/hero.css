@@ -10,7 +10,7 @@
     background: #000;
     color: #fcfcff;
     text-align: center;
-    padding: calc(var(--space-md) * 4) var(--space-md);
+    padding: calc(var(--space-md)*4) var(--space-md) var(--space-md) var(--space-md);
 }
 
 .hero h1 {
@@ -172,7 +172,7 @@
 /* Desktop View Optimization */
 @media screen and (min-width: 1024px) {
     .hero {
-        padding: var(--space-xl) calc(var(--space-xl) * 4) calc(var(--space-xl) * 2) calc(var(--space-xl) * 8);
+        padding: var(--space-xl) calc(var(--space-xl) * 4);
     }
 
     .latest-batch-btn:hover .cute-panda {
