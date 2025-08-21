@@ -1,20 +1,16 @@
 {
     "rewrites": [
         {
-            "source": "/arjuna-2025",
-            "destination": "/arjuna-2025.html"
+            "source": "/batch/arjuna-2025",
+            "destination": "/batch/arjuna-2025.html"
         },
         {
-            "source": "/wbssc-2025",
-            "destination": "/wbssc-2025.html"
+            "source": "/batch/wbssc-2025",
+            "destination": "/batch/wbssc-2025.html"
         },
         {
             "source": "/",
             "destination": "/index.html"
-        },
-        {
-            "source": "notifications",
-            "destination": "notifications.html"
         }
     ],
     "cleanUrls": true,
