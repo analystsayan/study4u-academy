@@ -52,7 +52,7 @@ track.addEventListener('touchstart', (e) => {
 
 track.addEventListener('touchmove', (e) => {
     deltaX = e.touches[0].clientX - startX;
-    e.preventDefault(); // prevent page scroll
+    // e.preventDefault();
 }, { passive: false });
 
 track.addEventListener('touchend', () => {
